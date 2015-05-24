@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hacker Blog</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="http://hackerschool.s3.amazonaws.com/blog/css/blog.css">
+  <script type="text/javascript" src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
+  <script type="text/javascript" src='./play.js'></script>
+  <script type="text/javascript" src='http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v3.0.3.js'></script>
+</head>
+<body>
+  <div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+      <div class="header">
+        <h1 class="brand-title">Reserbus</h1>
+        <h2 class="brand-tagline">Tumblr</h2>
+      </div>
+    </div>
+    <div class="content pure-u-1 pure-u-md-3-4">
+      <div>
+        <div class="posts">
+          <h1 class="content-subhead">Posts</h1>
+          <div id='posts-content'>
+            <section class="post">
+              <header class="post-header">
+                <h2 class="post-title">Bring all the posts from Reserbus Tumblr</h2>
+              </header>
+              <div class="post-description">
+                <strong>URL: </strong>
+                <a href="http://reserbus.tumblr.com/api/read/json?callback=?">
+                  http://reserbus.tumblr.com/api/read/json?callback=?
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="pure-menu pure-menu-horizontal">
+            <ul>
+              <li class="pure-menu-item">
+                <a href="http://reserbus.mx/" class="pure-menu-link">Reserbus</a>
+              </li>
+              <li class="pure-menu-item">
+                <a href="https://twitter.com/reserbus" class="pure-menu-link">Twitter</a>
+              </li>
+              <li class="pure-menu-item">
+                <a href="https://github.com/reserbus" class="pure-menu-link">GitHub</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

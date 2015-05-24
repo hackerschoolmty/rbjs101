@@ -1,0 +1,15 @@
+h1{
+  color: #090;
+}
+
+img{
+  height:100px;
+}
+
+#boring{
+  display:none;
+}
+
+ul{
+  list-style-type: square;
+}

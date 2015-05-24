@@ -1,0 +1,2 @@
+# HackerSchool Ruby & Javascript week
+

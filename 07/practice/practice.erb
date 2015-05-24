@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./read.css">
+<title>Best gags</title>
+</head>
+
+<body>
+
+  <h1>Best gags</h1>
+  
+  <div class='best-gag'>
+    <span>Joke with most points</span>
+    <h3><%= @reader.loved_gag.title %></h3>
+    <img src="<%= @reader.loved_gag.image_url %>" />
+  </div>
+
+  <div class='commented-gag'>
+    <span>Joke with most comments</span>
+    <h3><%= @reader.commented_gag.title %></h3> 
+    <img src="<%= @reader.commented_gag.image_url %>" />   
+  </div>
+
+</body>
+
+</html>

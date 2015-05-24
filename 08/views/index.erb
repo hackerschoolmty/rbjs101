@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hacker Blog</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="http://hackerschool.s3.amazonaws.com/blog/css/blog.css">
+  <script type="text/javascript" src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
+</head>
+<body>
+  <div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+      <div class="header">
+        <h1 class="brand-title">Hacker Blog</h1>
+        <h2 class="brand-tagline">>HSMTY</h2>
+      </div>
+    </div>
+    <div class="content pure-u-1 pure-u-md-3-4">
+      <div>
+        <div class="posts">
+          <h1 class="content-subhead">Courses</h1>
+          <% @courses.each do |course| %>
+            <section class="post">
+              <header class="post-header">
+                <img class="post-avatar" alt="<%= course.author.name %>" height="48" width="48" src="<%= course.author.avatar %>">
+                <h2 class="post-title"><%= course.title %></h2>
+                <p class="post-meta">
+                  By <a href="#" class="post-author"><%= course.author.name %></a>
+                  <% course.tags.each do |tag| %>
+                    <a class="post-category post-category-<%= tag %>" href="#"><%= tag.capitalize %></a> 
+                  <% end %>
+                </p>
+              </header>
+              <div class="post-description">
+                <p data-editable>
+                  <%= course.description %>
+                </p>
+              </div>
+            </section>
+          <% end %>
+        </div>
+        <div class="footer">
+          <div class="pure-menu pure-menu-horizontal">
+            <ul>
+              <li class="pure-menu-item">
+                <a href="http://hackerschool.mx/" class="pure-menu-link">Hacker School</a>
+              </li>
+              <li class="pure-menu-item">
+                <a href="https://twitter.com/hackerschoolmty" class="pure-menu-link">Twitter</a>
+              </li>
+              <li class="pure-menu-item">
+                <a href="https://github.com/hackerschoolmty" class="pure-menu-link">GitHub</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
