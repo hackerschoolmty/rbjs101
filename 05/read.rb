@@ -1,4 +1,5 @@
 ## Files && Strings
+# http://ruby-doc.org/core-2.2.0/File.html
 
 # Read a file
 File.read('./support/countries.txt')
@@ -14,6 +15,7 @@ Dir['./lib/*.rb'].each { |file| require file }
 hsmty = HackerSchool.new # From lib/hackerschool.rb
 
 # Read a csv file
+# http://ruby-doc.org/stdlib-1.9.2/libdoc/csv/rdoc/CSV.html
 require 'csv'
 
 CSV.foreach('./support/hackers.csv', headers: true) do |row|
