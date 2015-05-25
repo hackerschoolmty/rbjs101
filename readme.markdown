@@ -1,4 +1,4 @@
-# \[HSMTY>_\] Ruby & Javascript week
+# \[HSMTY>_\] Ruby & Javascript 101
 
 Ruby & Javascript Basics
 
