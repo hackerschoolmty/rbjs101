@@ -46,9 +46,6 @@ Ruby & Javascript Basics
 ### Markdown
 * [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-### CSS
-* [SMACSS (Buenas practicas de CSS)](https://smacss.com/)
-
 ### Javascript
 * [JS Fiddle](https://jsfiddle.net/)
 * [JQuery](http://api.jquery.com/jquery.getjson/)
@@ -57,3 +54,4 @@ Ruby & Javascript Basics
 
 ### CSS
 * [Pure CSS](http://purecss.io/)
+* [SMACSS (Buenas practicas de CSS)](https://smacss.com/)
