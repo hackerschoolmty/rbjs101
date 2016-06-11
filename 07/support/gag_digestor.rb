@@ -1,5 +1,5 @@
 class GagDigestor
-  
+
   attr_reader :dom
 
   def initialize(dom)
@@ -7,13 +7,13 @@ class GagDigestor
   end
 
   # Returns the gag in the format of:
-  # [title, points, comment_count, image_url] 
+  # [title, points, comment_count, image_url]
   def to_a
     [
       dom.css('.badge-item-title').text.strip,
       text_to_i(dom.css('.badge-item-love-count').text),
       text_to_i(dom.css('.comment').text),
-      dom.css('.badge-item-img').first['src']
+      dom.css('.badge-item-img').first && dom.css('.badge-item-img').first['src']
     ]
   end
 
